@@ -16,7 +16,7 @@
    version="1.1"
    id="svg8"
    enable-background="new"
-   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
    sodipodi:docname="icon.svg"
    inkscape:export-filename="E:\00workself\android\project\ftpCat\resource\image\icon_round.png"
    inkscape:export-xdpi="768"
@@ -63,11 +63,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="5.6568543"
-     inkscape:cx="2.1349941"
-     inkscape:cy="34.336256"
+     inkscape:zoom="8.0000001"
+     inkscape:cx="26.741506"
+     inkscape:cy="24.613669"
      inkscape:document-units="px"
-     inkscape:current-layer="layer2"
+     inkscape:current-layer="layer1"
      inkscape:showpageshadow="false"
      showgrid="false"
      inkscape:snap-others="true" />
@@ -87,7 +87,8 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="back"
-     style="display:inline">
+     style="display:inline"
+     sodipodi:insensitive="true">
     <rect
        style="fill:url(#linearGradient1140);fill-opacity:1;stroke:none;stroke-width:0.00781249;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect851"
@@ -111,15 +112,15 @@
        r="0.23437501" />
   </g>
   <g
-     inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     id="layer1"
-     transform="translate(0,-3.5)"
-     style="display:inline;opacity:1">
+     id="layer4"
+     inkscape:label="Layer 1"
+     style="display:none"
+     sodipodi:insensitive="true">
     <g
        id="g847"
-       transform="matrix(0.80478594,0,0,0.80640387,0.04880352,0.72598549)"
-       style="stroke-width:1.24131942">
+       transform="matrix(0.80478594,0,0,0.80640391,0.04880352,-2.7740147)"
+       style="display:inline;opacity:1;stroke-width:1.24131942">
       <use
          height="100%"
          width="100%"
@@ -134,7 +135,7 @@
          id="g1167"
          style="stroke-width:1.18453836">
         <rect
-           id="rect10"
+           id="rect10-8"
            width="0.15365911"
            height="0.27356321"
            x="0.11274879"
@@ -144,11 +145,11 @@
         <path
            style="fill:none;stroke:#555555;stroke-width:0.01850841;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            d="M 0.11003891,3.8666247 H 0.26294269"
-           id="path4636"
+           id="path4636-8"
            inkscape:connector-curvature="0" />
         <ellipse
            style="fill:none;fill-opacity:1;stroke:#555555;stroke-width:0.00925421;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="path4638"
+           id="path4638-4"
            cx="0.19175392"
            cy="3.8917713"
            rx="0.012157151"
@@ -157,21 +158,21 @@
       <path
          sodipodi:nodetypes="ccc"
          inkscape:connector-curvature="0"
-         id="path4668"
+         id="path4668-0"
          d="m 0.2869363,3.9125887 0.03808,-0.035037 -0.0270582,-1.055e-4"
          style="fill:none;stroke:#555555;stroke-width:0.01163737;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
       <use
          height="100%"
          width="100%"
          transform="rotate(180,0.3182792,3.8942677)"
-         id="use820"
-         xlink:href="#path4668"
+         id="use820-5"
+         xlink:href="#path4668-0"
          y="0"
          x="0"
          style="stroke-width:1.40623903" />
       <text
          transform="scale(0.99954383,1.0004564)"
-         id="text824"
+         id="text824-0"
          y="3.6222703"
          x="0.11904199"
          style="font-style:normal;font-weight:normal;font-size:0.27585086px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#555555;fill-opacity:1;stroke:none;stroke-width:0.00969781"
@@ -179,8 +180,98 @@
            style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:0.05517017px;font-family:'Gen Jyuu Gothic';-inkscape-font-specification:'Gen Jyuu Gothic Heavy';fill:#555555;fill-opacity:1;stroke-width:0.00969781"
            y="3.6222703"
            x="0.11904199"
-           id="tspan822"
+           id="tspan822-0"
            sodipodi:role="line">FTP</tspan></text>
+    </g>
+  </g>
+  <g
+     inkscape:label="Layer 2"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-3.5)"
+     style="display:inline;opacity:1">
+    <g
+       id="g845"
+       transform="matrix(0,0.71240911,-1.3395157,0,5.5341561,3.4181302)"
+       style="stroke-width:1.0236733">
+      <path
+         sodipodi:nodetypes="ccc"
+         inkscape:connector-curvature="0"
+         id="path4668"
+         d="m 0.27972582,3.8811122 0.0306462,-0.028254 -0.0217761,-8.51e-5"
+         style="fill:none;stroke:#555555;stroke-width:0.00959694;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <use
+         height="100%"
+         width="100%"
+         transform="rotate(180,0.30495015,3.8663381)"
+         id="use820"
+         xlink:href="#path4668"
+         y="0"
+         x="0"
+         style="stroke-width:1.4395293" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:0.39862856px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#555555;fill-opacity:1;stroke:none;stroke-width:0.0078125"
+       x="0.094924718"
+       y="3.8701284"
+       id="text824"
+       transform="scale(0.99879156,1.0012099)"><tspan
+         sodipodi:role="line"
+         id="tspan822"
+         x="0.094924718"
+         y="3.8701284"
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:0.0797257px;font-family:'Gen Jyuu Gothic';-inkscape-font-specification:'Gen Jyuu Gothic Heavy';fill:#555555;fill-opacity:1;stroke-width:0.0078125">FTP</tspan></text>
+    <path
+       sodipodi:type="star"
+       style="display:inline;opacity:1;fill:#555555;fill-opacity:1;fill-rule:nonzero;stroke:#555555;stroke-width:0.01357813;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="path860"
+       sodipodi:sides="3"
+       sodipodi:cx="0.13671875"
+       sodipodi:cy="0.30566406"
+       sodipodi:r1="0.057218563"
+       sodipodi:r2="0.028609281"
+       sodipodi:arg1="0.4789136"
+       sodipodi:arg2="1.5261111"
+       inkscape:flatsided="true"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 0.1875,0.33203125 -0.09900653,0.004427 0.04566931,-0.0879557 z"
+       inkscape:transform-center-x="-3.0930542e-006"
+       inkscape:transform-center-y="-0.008743929"
+       transform="matrix(0.58153174,0.02530652,-0.02590243,0.56815325,0.13657902,3.5924699)" />
+    <rect
+       style="display:inline;opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#555555;stroke-width:0.03125;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="rect847"
+       width="0.19867691"
+       height="0.11042751"
+       x="0.10883231"
+       y="3.6263244"
+       ry="0.011383479" />
+    <g
+       style="stroke-width:1.07487249"
+       id="g858"
+       transform="matrix(0.93057673,0,0,0.9301092,0.01485527,0.26496008)">
+      <rect
+         ry="0.019973731"
+         style="fill:#ffffff;fill-opacity:1;stroke:#555555;stroke-width:0.01679488;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         y="3.6571503"
+         x="0.28316736"
+         height="0.23113093"
+         width="0.12961631"
+         id="rect10" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4636"
+         d="M 0.28088149,3.8465619 H 0.40986065"
+         style="fill:none;stroke:#555555;stroke-width:0.01679488;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <ellipse
+         ry="0.01028494"
+         rx="0.01025494"
+         cy="3.8678081"
+         cx="0.34981069"
+         id="path4638"
+         style="fill:none;fill-opacity:1;stroke:#555555;stroke-width:0.00839744;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     </g>
   </g>
 </svg>
