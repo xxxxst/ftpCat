@@ -1,3 +1,5 @@
 <resources>
 	<string name="app_name">ftpCat</string>
+	<string name="permissonDenied">权限不足</string>
+	<string name="wifiNoOpen">wifi未开启</string>
 </resources>
