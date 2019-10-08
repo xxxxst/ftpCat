@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 	<string name="app_name">ftpCat</string>
-	<string name="permissonDenied">permisson denied</string>
+	<string name="permissionDenied">permisson denied</string>
 	<string name="wifiNoOpen">wifi not open</string>
 </resources>

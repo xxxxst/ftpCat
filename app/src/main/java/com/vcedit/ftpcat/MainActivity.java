@@ -50,8 +50,8 @@ public class MainActivity extends BaseActivity {
 			//Manifest.permission.RECORD_AUDIO,
 		}, () -> {
 			if (!permisssionCheck.isOk) {
-				BaseActivity.toast(R.string.permissonDenied);
-				txtInfo.setText(R.string.permissonDenied);
+				BaseActivity.toast(R.string.permissionDenied);
+				txtInfo.setText(R.string.permissionDenied);
 				return;
 			}
 

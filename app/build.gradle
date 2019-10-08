@@ -1,6 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        keystore {
+            keyAlias 'keystore'
+            keyPassword 'keystore'
+            storeFile file('../keystore/keystore.jks')
+            storePassword 'keystore'
+        }
+    }
     compileSdkVersion 27
     defaultConfig {
         applicationId "com.vcedit.ftpcat"
@@ -9,11 +17,16 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.keystore
     }
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.keystore
+        }
+        debug {
+            signingConfig signingConfigs.keystore
         }
     }
     compileOptions {
@@ -25,6 +38,8 @@ android {
             outputFileName = "ftCat_v${variant.versionName}.apk"
         }
     }
+    productFlavors {
+    }
 }
 
 dependencies {
@@ -34,8 +49,8 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-
-    implementation files('libs/ftpserver-core-1.1.1.jar')
+//    implementation files('libs/ftpserver-core-1.1.1.jar')
+    implementation files('libs/spring-2.5.6.jar')
     implementation files('libs/slf4j-api-1.7.21.jar')
     implementation files('libs/slf4j-log4j12-1.7.21.jar')
     implementation files('libs/log4j-1.2.17.jar')
