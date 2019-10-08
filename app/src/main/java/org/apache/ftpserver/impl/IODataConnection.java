@@ -177,12 +177,15 @@ public class IODataConnection implements DataConnection {
         Writer writer = null;
         try {
             writer = new OutputStreamWriter(out, "UTF-8");
+            //writer = new OutputStreamWriter(out, "GBK");
             writer.write(str);
 
             // update session
             if (session instanceof DefaultFtpSession) {
                 ((DefaultFtpSession) session).increaseWrittenDataBytes(str
                         .getBytes("UTF-8").length);
+                //((DefaultFtpSession) session).increaseWrittenDataBytes(str
+                //    .getBytes("GBK").length);
             }
         } finally {
             if (writer != null) {
