@@ -35,10 +35,10 @@ import java.nio.charset.Charset;
  * @author <a href="http://mina.apache.org">Apache MINA Project</a>
  */
 public class FtpServerProtocolCodecFactory implements ProtocolCodecFactory {
-    private final ProtocolDecoder decoder = new TextLineDecoder(Charset
-            .forName("UTF-8"));
-	//private final ProtocolDecoder decoder = new TextLineDecoder(Charset
-		//.forName("GBK"));
+    //private final ProtocolDecoder decoder = new TextLineDecoder(Charset
+    //        .forName("UTF-8"));
+	private final ProtocolDecoder decoder = new TextLineDecoder(Charset
+		.forName("GBK"));
 
     private final ProtocolEncoder encoder = new FtpResponseEncoder();
 

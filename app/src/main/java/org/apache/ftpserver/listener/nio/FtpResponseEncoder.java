@@ -37,10 +37,10 @@ import java.nio.charset.CharsetEncoder;
  * @author <a href="http://mina.apache.org">Apache MINA Project</a>
  */
 public class FtpResponseEncoder extends ProtocolEncoderAdapter {
-    private static final CharsetEncoder ENCODER = Charset.forName("UTF-8")
-            .newEncoder();
-    //private static final CharsetEncoder ENCODER = Charset.forName("GBK")
-    //    .newEncoder();
+    //private static final CharsetEncoder ENCODER = Charset.forName("UTF-8")
+    //        .newEncoder();
+    private static final CharsetEncoder ENCODER = Charset.forName("GBK")
+        .newEncoder();
 
     public void encode(IoSession session, Object message,
             ProtocolEncoderOutput out) throws Exception {

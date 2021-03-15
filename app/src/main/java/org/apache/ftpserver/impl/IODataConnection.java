@@ -176,8 +176,8 @@ public class IODataConnection implements DataConnection {
         OutputStream out = getDataOutputStream();
         Writer writer = null;
         try {
-            writer = new OutputStreamWriter(out, "UTF-8");
-            //writer = new OutputStreamWriter(out, "GBK");
+            //writer = new OutputStreamWriter(out, "UTF-8");
+            writer = new OutputStreamWriter(out, "GBK");
             writer.write(str);
 
             // update session

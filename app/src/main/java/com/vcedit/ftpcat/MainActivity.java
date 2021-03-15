@@ -11,17 +11,8 @@ import android.view.KeyEvent;
 import android.widget.TextView;
 
 import com.vcedit.ftpcat.control.ExitHelp;
+import com.vcedit.ftpcat.control.FtpCtl;
 import com.vcedit.ftpcat.view.BaseActivity;
-
-import org.apache.ftpserver.FtpServer;
-import org.apache.ftpserver.FtpServerFactory;
-import org.apache.ftpserver.ftplet.Authority;
-import org.apache.ftpserver.listener.ListenerFactory;
-import org.apache.ftpserver.usermanager.impl.BaseUser;
-import org.apache.ftpserver.usermanager.impl.WritePermission;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class MainActivity extends BaseActivity {
 	private int ftpPort = 9123;
@@ -29,9 +20,10 @@ public class MainActivity extends BaseActivity {
 
 	private TextView txtInfo = null;
 
-	private FtpServerFactory ftpServerFactory = null;
-	private ListenerFactory listenerFactory = null;
-	private FtpServer ftpServer = null;
+	//private FtpServerFactory ftpServerFactory = null;
+	//private ListenerFactory listenerFactory = null;
+	//private FtpServer ftpServer = null;
+	public static FtpCtl ftpCtl = new FtpCtl();
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +31,8 @@ public class MainActivity extends BaseActivity {
 		setContentView(R.layout.activity_main);
 
 		txtInfo = findViewById(R.id.txtInfo);
+
+		//log("create:" + App.actAount + "," + App.isForeground());
 
 		permisssionCheck.checkPermission(new String[]{
 			Manifest.permission.INTERNET,
@@ -67,8 +61,10 @@ public class MainActivity extends BaseActivity {
 			String sdPath = android.os.Environment.getExternalStorageDirectory().getAbsolutePath() + "/";
 			sdPath = sdPath.replaceAll("[/\\\\]+", "/");
 
-			initFtpServer(sdPath, strIp, ftpPort);
+			ftpCtl.initFtpServer(sdPath, strIp, ftpPort);
+			//LifeServer.run(this);
 		});
+
 	}
 
 	private void showIp(String strIp) {
@@ -77,53 +73,79 @@ public class MainActivity extends BaseActivity {
 		txtInfo.setText(str);
 	}
 
-	private void initFtpServer(String path, String strIp, int port) {
-		try {
-			ftpServerFactory = new FtpServerFactory();
+	//private void initFtpServer(String path, String strIp, int port) {
+	//	try {
+	//		ftpServerFactory = new FtpServerFactory();
+	//
+	//		//ip & port
+	//		listenerFactory = new ListenerFactory();
+	//		listenerFactory.setServerAddress(strIp);
+	//		listenerFactory.setPort(port);
+	//		ftpServerFactory.addListener("default", listenerFactory.createListener());
+	//
+	//		//user
+	//		BaseUser user = new BaseUser();
+	//		user.setName("anonymous");
+	//		user.setPassword("anonymous");
+	//		//root path
+	//		user.setHomeDirectory(path);
+	//		//permission
+	//		List<Authority> authorities = new ArrayList<>();
+	//		authorities.add(new WritePermission());
+	//		user.setAuthorities(authorities);
+	//		//
+	//		ftpServerFactory.getUserManager().save(user);
+	//
+	//		//start
+	//		ftpServer = ftpServerFactory.createServer();
+	//		ftpServer.start();
+	//	} catch (Exception ex) {
+	//		log(ex.toString());
+	//	}
+	//}
 
-			//ip & port
-			listenerFactory = new ListenerFactory();
-			listenerFactory.setServerAddress(strIp);
-			listenerFactory.setPort(port);
-			ftpServerFactory.addListener("default", listenerFactory.createListener());
+	//private void stop() {
+	//	try{
+	//		if (ftpServer != null) {
+	//			ftpServer.stop();
+	//			ftpServer = null;
+	//		}
+	//	} catch (Exception ex) {
+	//		log(ex.toString());
+	//	}
+	//}
 
-			//user
-			BaseUser user = new BaseUser();
-			user.setName("anonymous");
-			user.setPassword("anonymous");
-			//root path
-			user.setHomeDirectory(path);
-			//permission
-			List<Authority> authorities = new ArrayList<>();
-			authorities.add(new WritePermission());
-			user.setAuthorities(authorities);
-			//
-			ftpServerFactory.getUserManager().save(user);
+	@Override
+	protected void onResume() {
+		//log("onResume:" + App.actAount + "," + App.isForeground());
+		//LifeServer.stop();
 
-			//start
-			ftpServer = ftpServerFactory.createServer();
-			ftpServer.start();
-		} catch (Exception ex) {
-			log(ex.toString());
-		}
+		super.onResume();
 	}
 
-	private void stop() {
-		try{
-			if (ftpServer != null) {
-				ftpServer.stop();
-				ftpServer = null;
-			}
-		} catch (Exception ex) {
-			log(ex.toString());
-		}
+	@Override
+	protected void onPause() {
+		//log("onPause:" + App.actAount + "," + App.isForeground());
+
+		super.onPause();
+	}
+
+	@Override
+	protected void onStop() {
+		//log("onStop:" + App.actAount + "," + App.isForeground());
+
+		super.onStop();
 	}
 
 	@Override
 	protected void onDestroy() {
-		super.onDestroy();
+		//log("onDestroy:" + App.actAount + "," + App.isForeground());
 
-		stop();
+		//LifeServer.stop();
+		//stop();
+		ftpCtl.stop();
+
+		super.onDestroy();
 	}
 
 	@Override
